@@ -25,7 +25,7 @@ header {
 
 .navbar {
     display: flex;
-    gap: 90px;
+    gap: min(3vw);
 }
 
 .link {
@@ -36,4 +36,35 @@ header {
 .link:hover {
     color: #1E3054;
     text-decoration: underline;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1800px) {
+    header {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .name {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        font-size: 1.2rem;
+        height: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        font-size: 0.9rem;
+    }
 }
