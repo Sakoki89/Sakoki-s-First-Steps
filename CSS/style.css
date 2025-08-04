@@ -10,3 +10,30 @@ body {
     margin: 0;
     padding: 0;
 }
+
+header {
+    max-width: 1600px;
+    height: 150px;
+    margin: 0 auto;
+    color: #1E3054;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 90px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1E3054;
+}
+
+.link:hover {
+    color: #1E3054;
+    text-decoration: underline;
+}
