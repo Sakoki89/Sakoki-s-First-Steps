@@ -1,19 +1,27 @@
 @font-face {
     font-family: 'Montserrat';
-    src: url('../fonts/Montserrat-Italic-VariableFont_wght.ttf'), format('truetype');
+    src: url('../fonts/Montserrat-VariableFont_wght.ttf'), format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     margin: 0;
     padding: 0;
 }
 
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header Section*/
+
 header {
     max-width: 1600px;
-    height: 150px;
+    height: 130px;
     margin: 0 auto;
     color: #1E3054;
     font-size: 1.5rem;
@@ -36,6 +44,85 @@ header {
 .link:hover {
     color: #1E3054;
     text-decoration: underline;
+}
+
+/*Welcome Section*/
+
+.welcome_background {
+    width: 100%;
+    height: 80vh;
+    background-image: url('../img/start.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.welcome {
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.leftpart {
+    display: flex;
+    flex-direction: column;
+    height: 88vh;
+}
+
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+.mottobox {
+    padding: 2.5rem;
+    background-color: rgba(30, 48, 84, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: auto;
+}
+
+.motto {
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mottobox hr {
+  width: 50%;
+  border: none;
+  height: 4px;
+  background-color: white;
+}
+
+.promise {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.rightpart {
+    display: flex;
+    justify-content: center;
+}
+
+.number {
+    padding: 1.5rem;
+    background-color: rgba(30, 48, 84, 0.9);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 
 /* Responsive Design */
