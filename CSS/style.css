@@ -134,6 +134,9 @@ header {
     header {
         width: 90%;
     }
+    .welcome {
+        width: 90%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -144,14 +147,42 @@ header {
         width: 100%;
         justify-content: center;
     }
+    .motto {
+        font-size: 1.7rem;
+    }
 }
 
+@media (max-width: 700px) {
+    .upperpart {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .lowerpart {
+        height: 60vh;
+        align-items: center;
+        width: 100%;
+    }
+    .mottobox {
+        width: 90%;
+        padding: 1rem;
+    }
+}
 @media (max-width: 600px) {
 
     header{
         height: 8vh;
     }
     .navbar {
+        font-size: 0.9rem;
+    }
+    .number {
+        font-size: 0.9rem;
+    }
+    .motto {
+        font-size: 1.1rem;
+    }
+    .promise {
         font-size: 0.9rem;
     }
 }
@@ -162,6 +193,15 @@ header {
     }
     .navbar {
         font-size: 0.8rem;
+    }
+    .number {
+        font-size: 0.8rem;
+    }
+    .motto {
+        font-size: 1rem;
+    }
+    .promise {
+        font-size: 0.7rem;
     }
 }
 
