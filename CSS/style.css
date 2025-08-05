@@ -138,6 +138,68 @@ header {
     opacity: 0;
 }
 
+/* About Section */
+
+.about {
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.innerabout {
+    max-width: 1075px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+h1 {
+    color: #1E3054;
+    font-weight: 500;
+}
+
+.picture {
+    width: 33%;
+}
+
+.button {
+  position: relative;
+  width: 200px;
+  background-color: #1e3054;
+  border: 2px solid #1e3054;
+  border-radius: 1px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: background-color 0.8s ease, color 0.3s ease;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: left 0.8s ease;
+  z-index: -1;
+}
+
+.button:hover::before {
+  left: 0;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+}
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
@@ -226,6 +288,12 @@ header {
     .promise {
         font-size: 0.7rem;
     }
+}
+
+/*scrollbox*/
+
+.leer {
+    height: 100vh;
 }
 
 
