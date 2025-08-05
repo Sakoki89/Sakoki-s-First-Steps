@@ -33,7 +33,7 @@ header {
 
 .navbar {
     display: flex;
-    gap: min(3vw);
+    gap: min(3vw, 2rem);
 }
 
 .link {
@@ -62,14 +62,16 @@ header {
 .welcome {
     width: 1075px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.leftpart {
+.upperpart {
     display: flex;
-    flex-direction: column;
-    height: 88vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .logo {
@@ -78,7 +80,7 @@ header {
 }
 
 .mottobox {
-    padding: 2.0rem;
+    padding: 2rem;
     background-color: rgba(30, 48, 84, 0.9);
     color: white;
     display: flex;
@@ -86,7 +88,6 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: auto;
 }
 
 .motto {
@@ -110,17 +111,18 @@ header {
     text-align: center;
 }
 
-.rightpart {
+.lowerpart {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70vh;
 }
 
 .number {
-    padding: 1.0rem;
+    padding: 1rem;
     background-color: rgba(30, 48, 84, 0.9);
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.0rem;
