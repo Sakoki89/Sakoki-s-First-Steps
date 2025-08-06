@@ -210,6 +210,93 @@ h1 {
 
 /*Service Section*/
 
+.soloheader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vh;
+    margin-bottom: 10vh;
+}
+
+.innersoloheader {
+    width: 1075px;
+    display: flex;
+    justify-content: flex-start
+}
+.service1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E3054;
+    position: relative;
+    overflow: visible;
+}
+
+.rating {
+    max-width: 1075px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.servicepic1 {
+    width: 31%;
+    position: relative;
+    top: -70px;
+    margin-right: 8vw;
+}
+
+.textbox1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.serviceheadline {
+    font-size: 1.1rem
+}
+
+.list {
+  list-style-position: inside;   
+  padding-left: 0;               
+  margin: 0;    
+  color: #CBB492;                
+}
+
+.service2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #293B5F;
+    position: relative;
+    overflow: visible;
+}
+
+.optimise {
+    max-width: 1075px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+.servicepic2 {
+    width: 31%;
+    position: relative;
+    top: +70px;
+    margin-left: 8vw;
+}
+
+.textbox2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
