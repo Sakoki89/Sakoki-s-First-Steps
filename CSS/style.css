@@ -159,8 +159,16 @@ h1 {
     font-weight: 500;
 }
 
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .picture {
     width: 33%;
+    box-sizing: border-box;
+    padding: 0.1rem;
 }
 
 .button {
@@ -200,6 +208,8 @@ h1 {
   color: black;
 }
 
+/*Service Section*/
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
@@ -222,6 +232,9 @@ h1 {
     .welcome {
         width: 90%;
     }
+    .innerabout {
+        width: 90%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -234,6 +247,21 @@ h1 {
     }
     .motto {
         font-size: 1.7rem;
+    }
+
+    .innerabout {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .button {
+    width: 175px;
+    font-size: 1rem;
     }
 }
 
@@ -270,9 +298,12 @@ h1 {
     .promise {
         font-size: 0.9rem;
     }
+    h1 {
+        font-size: 1.4rem;
+    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 405px) {
     header {
         height: 7vh;
     }
@@ -287,6 +318,16 @@ h1 {
     }
     .promise {
         font-size: 0.7rem;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.8rem;
+    }
+    .button {
+    width: 150px;
+    font-size: 0.8rem;
     }
 }
 
