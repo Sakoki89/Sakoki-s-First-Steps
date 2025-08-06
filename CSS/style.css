@@ -322,6 +322,23 @@ h1 {
     .innerabout {
         width: 90%;
     }
+    .innersoloheader {
+        width: 90%;
+    }
+    .rating {
+        width: 90%;
+    }
+    .optimise {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .textbox1, .textbox2 {
+        font-size: 0.8rem;
+        gap: 1rem;
+    }
 }
 
 @media (max-width: 800px) {
@@ -335,22 +352,44 @@ h1 {
     .motto {
         font-size: 1.7rem;
     }
-
     .innerabout {
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
     h1 {
         font-size: 1.8rem;
     }
-
     .button {
     width: 175px;
     font-size: 1rem;
     }
-}
+    .soloheader {
+        margin-bottom: 1.5rem;
+    }
+    .rating {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem;
+    }
+    .optimise {
+        flex-direction: column-reverse;  
+        align-items: center;
+        margin: 4rem;
+    }
+    .servicepic1, .servicepic2 {
+        position: relative;
+        top: 0px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 2rem;
+        width: 80%;
+    }
+    }
+    .textbox1, .textbox2 {
+        align-items: flex-start;
+        width: 80%;
+    }
 
 @media (max-width: 700px) {
     .upperpart {
