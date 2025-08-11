@@ -356,10 +356,10 @@ h1 {
 }          
 .buttonbox {
   display: flex;
-  justify-content: center;  /* zentriert den Button */
-  margin-top: -2.3rem;      /* zieht den Button ins Formular rein */
+  justify-content: center;  
+  margin-top: -3rem;      
   position: relative;
-  z-index: 5;               /* über dem Formular anzeigen */
+  z-index: 5;               
 }
 
 /*Animation*/
