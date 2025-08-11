@@ -297,6 +297,71 @@ h1 {
     gap: 2rem;
 }
 
+/*Contact Section*/
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
+}
+.innercontact {
+    width: 100%;
+    max-width: 1075px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 1rem;
+}
+.contacthead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+}
+.contact-form {
+    width: 100%;
+}
+.form-row {
+    display: flex;
+    width: 100%;
+    column-gap: 3rem;
+    row-gap: 0;
+    margin: 0;
+}
+.form-field {
+    width: 100%;
+    margin-block: 0.4rem;
+    min-width: 0;
+    margin: 0;
+    margin-bottom: 2vh;
+}
+.inputstyle {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 1px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    margin: 0;    
+    border: 1px solid #555;           
+    color: #000;
+}
+.inputstyle:focus {
+  outline: none;
+  border: 2px solid black;         
+  background-color: #fff;
+}          
+.buttonbox {
+  display: flex;
+  justify-content: center;  /* zentriert den Button */
+  margin-top: -2.3rem;      /* zieht den Button ins Formular rein */
+  position: relative;
+  z-index: 5;               /* über dem Formular anzeigen */
+}
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
@@ -357,6 +422,11 @@ h1 {
         align-items: center;
         text-align: center;
     }
+    .innersoloheader {
+        justify-content: center;
+        align-items: center;
+    }    
+    
     h1 {
         font-size: 1.8rem;
     }
