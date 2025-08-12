@@ -11,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -263,7 +264,7 @@ h1 {
   list-style-position: inside;   
   padding-left: 0;               
   margin: 0;    
-  color: #CBB492;                
+  color: #CBB492;               
 }
 
 .service2 {
@@ -362,6 +363,60 @@ h1 {
   z-index: 5;               
 }
 
+/*Clients Section*/
+
+.clients {
+    width: 100%;
+    height: 66vh;
+    background-image: url('../img/kunden.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+}
+
+.innerclients {
+    max-width: 1075px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clientheader {
+    color: white;
+    font-size: 3rem;
+    margin-top: 7rem;
+}
+
+.clientbox {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: stretch;
+}
+
+.client1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+}
+
+.quote {
+    width: 7vh;
+    height: auto;
+}
+
+.speak {
+    flex: 1;
+    color: white;
+}
+.extra {
+     margin-top: auto; 
+}
 /*Animation*/
 
 @keyframes slideInFromLeft {
