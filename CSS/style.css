@@ -380,6 +380,7 @@ h1 {
     max-width: 1075px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .clientheader {
