@@ -452,7 +452,18 @@ h1 {
     .optimise {
         width: 90%;
     }
-
+    .innercontact {
+        width: 90%;
+    }
+    .contactheader {
+        font-size: 1.5rem;
+    }
+    .innerclients {
+        width: 90%;
+    }
+    .clientheader {
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -482,7 +493,6 @@ h1 {
         justify-content: center;
         align-items: center;
     }    
-    
     h1 {
         font-size: 1.8rem;
     }
@@ -511,12 +521,38 @@ h1 {
         margin-bottom: 2rem;
         width: 80%;
     }
-    }
     .textbox1, .textbox2 {
         align-items: flex-start;
         width: 80%;
     }
-
+    .contactheader {
+        font-size: 1.3rem;
+    }
+    .contact {
+        margin-top: 10vh;
+    }
+    .clients {
+        height: 100%;
+    }
+    .clientheader {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .clientbox {
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .quote {
+        width: 5vh;
+        height: auto;
+    }
+    .client1 {
+        gap: 1rem
+    }
+    .extra {
+        margin-bottom: 7rem;
+    }
+}
 @media (max-width: 700px) {
     .upperpart {
         flex-direction: column;
@@ -531,6 +567,9 @@ h1 {
     .mottobox {
         width: 90%;
         padding: 1rem;
+    }
+    .contactheader {
+        font-size: 1.1rem
     }
 }
 @media (max-width: 600px) {
@@ -551,6 +590,12 @@ h1 {
         font-size: 0.9rem;
     }
     h1 {
+        font-size: 1.4rem;
+    }
+    .contactheader {
+        text-align: center;
+    }
+    .clientheader {
         font-size: 1.4rem;
     }
 }
