@@ -5,13 +5,16 @@
     font-style: normal;
 }
 
+html {
+        scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 p {
@@ -459,6 +462,24 @@ h1 {
   to {
     transform: translateX(0);
     opacity: 1;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.reveal.in-view {
+  animation: slideInFromLeft 800ms ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal.in-view {
+    animation: none !important;
+    transform: none !important;
+    opacity: 1 !important;
   }
 }
 

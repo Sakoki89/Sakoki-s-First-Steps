@@ -6,10 +6,10 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     
     <link rel="icon" href="img/logo.jpg" type="image/jpeg">
-     
+
 </head>
 <body>
     
@@ -20,15 +20,15 @@
         </div>
 
         <nav class="navbar">
-            <a class="link" href="">START</a>
-            <a class="link" href="">ABOUT</a>
-            <a class="link" href="">LEISTUNGEN</a>
-            <a class="link" href="">KONTAKT</a>
+            <a class="link" href="#start">START</a>
+            <a class="link" href="#aboutus">ABOUT</a>
+            <a class="link" href="#ourservice">LEISTUNGEN</a>
+            <a class="link" href="#contactus">KONTAKT</a>
         </nav>    
     
     </header>
 
-    <div class="welcome_background">
+    <div class="welcome_background" id="start">
         <div class="welcome">
 
             <div class="upperpart">
@@ -60,7 +60,7 @@
 
     </div>
 
-    <div class="about">
+    <div class="about reveal" id="aboutus">
         <div class="innerabout">
 
             <h1>LÖSUNGEN, DIE ÜBERZEUGEN</h1>
@@ -80,14 +80,14 @@
         </div>
     </div>
 
-    <div class="soloheader">
+    <div class="soloheader reveal" id="ourservice">
         <div class="innersoloheader">
             <h1>UNSER SERVICE</h1>
         </div>
     </div>
 
     <div class="service1">
-        <div class="rating">
+        <div class="rating reveal">
             <img class="servicepic1" src="img/sec2_1.jpg" alt="Bild 4">
             
             <div class="textbox1">
@@ -104,7 +104,7 @@
     </div>
 
     <div class="service2">
-        <div class="optimise">
+        <div class="optimise reveal">
             <div class="textbox2">
                 <p class="serviceheadline">IMMOBILIENVERMITTLUNG- UND OPTIMIERUNG</p>
 
@@ -121,7 +121,7 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contactus">
         <div class="innercontact">
             <div class="contacthead">
                 <h1 class="contactheader">ERSTKLASSIGER SERVICE – NUR EINEN KLICK ENTFERNT</h1>
@@ -155,7 +155,7 @@
     </div>
 
     <div class="clients">
-        <div class="innerclients">
+        <div class="innerclients reveal">
             <h1 class="clientheader">Kunden im Spotlight: Ihre Erfahrungen</h1>
         
             <div class="clientbox">
