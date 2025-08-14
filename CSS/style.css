@@ -452,6 +452,21 @@ h1 {
     color: white;
 }
 
+/* Impressum html */
+
+.textimpressum {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 15vh;  
+    margin-bottom: 15vh;
+}
+
+.innerimpressum {
+    max-width: 1075px;
+}
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
@@ -517,6 +532,9 @@ h1 {
         font-size: 2.5rem;
     }
     .innerfooter {
+        width: 90%;
+    }
+    .innerimpressum {
         width: 90%;
     }
 }
