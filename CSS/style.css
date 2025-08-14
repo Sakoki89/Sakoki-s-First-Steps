@@ -467,6 +467,21 @@ h1 {
     max-width: 1075px;
 }
 
+/* Datenschutz html */
+
+.datasecurity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 15vh;  
+    margin-bottom: 15vh;
+}
+
+.innerdatasecurity {
+    max-width: 1075px;
+}
+
 /*Animation*/
 
 @keyframes slideInFromLeft {
