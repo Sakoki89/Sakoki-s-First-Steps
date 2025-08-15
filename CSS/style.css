@@ -552,6 +552,9 @@ h1 {
     .innerimpressum {
         width: 90%;
     }
+    .innerdatasecurity {
+        width: 90%;
+    }
 }
 
 @media (max-width: 1000px) {
