@@ -128,28 +128,48 @@
                 <p>Wir freuen uns auf Ihre Nachricht!</p>
             </div>
             
-                <form class="contact-form" action="#" method="post">
-                        <div class="form-row">
-                            <div class="form-field">
-                                <input class="inputstyle" id="fullname" name="fullname" type="text" placeholder="Firma / Name" autocomplete="name" required>
-                            </div>
-                            <div class="form-field">
-                                <input  class="inputstyle" id="phone" name="phone" type="tel" placeholder="Telefonnummer" autocomplete="tel" inputmode="tel" required>
-                            </div>
-                        </div>
+            <form class="contact-form" id="contact-form"
+                    action="/Sakoki-s-First-Steps/contact.php" method="POST" accept-charset="UTF-8" novalidate>
 
-                        <div class="form-field">
-                            <input class="inputstyle" id="email" name="email" type="email" placeholder="E-mail" autocomplete="email"  required>
-                        </div>
+                <div class="form-row">
+                    <div class="form-field">
+                    
+                    <input class="inputstyle" id="fullname" name="name" type="text"
+                            placeholder="Firma / Name" autocomplete="name" required>
+                    </div>
+                    <div class="form-field">
+                    <input class="inputstyle" id="phone" name="phone" type="tel"
+                            placeholder="Telefonnummer" autocomplete="tel" inputmode="tel">
+                    </div>
+                </div>
 
-                        <div class="form-field">
-                            <textarea class="inputstyle" id="message" name="message" rows="6" placeholder="Ihre Nachricht..." required></textarea>
-                        </div>
-                </form>
-            
-            <div class="buttonbox">
-                <button class="button">Anfragen</button>
-            </div>
+                <div class="form-field">
+                    <input class="inputstyle" id="email" name="email" type="email"
+                        placeholder="E-mail" autocomplete="email" required>
+                </div>
+
+                <div class="form-field">
+                    <textarea class="inputstyle" id="message" name="message" rows="6"
+                            placeholder="Ihre Nachricht..." required></textarea>
+                </div>
+
+                <div style="position:absolute; left:-5000px;" aria-hidden="true">
+                    <label for="website">Bitte leer lassen</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="buttonbox">
+                    <button class="button" type="submit">Anfragen</button>
+                </div>
+
+                <label class="form-field datapoint" style="display:block;">
+                    <input type="checkbox" name="consent" value="1" required>
+                    Ich stimme zu, dass meine Angaben zur Kontaktaufnahme gespeichert und verarbeitet werden.
+                    <a href="/datenschutz.html" target="_blank" rel="noopener">Details</a>
+                </label>
+
+                <p id="form-status" aria-live="polite"></p>
+            </form>
 
         </div>
     </div>

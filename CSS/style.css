@@ -365,6 +365,9 @@ h1 {
   position: relative;
   z-index: 5;               
 }
+.datapoint {
+    margin-top: 1rem;
+}
 
 /*Clients Section*/
 
