@@ -2,9 +2,9 @@
 declare(strict_types=1);
 
 // ------------ KONFIG ------------
-$toEmail   = 'coding.account@gmx.de';      // wohin die Anfrage geht
+$toEmail   = 'coding.account@gmx.de';  
 $toName    = 'Test GMX';
-$fromEmail = 'coding.account@gmx.de';      // GMX verlangt, dass Absender = Konto ist
+$fromEmail = 'coding.account@gmx.de';    
 $sitename  = 'Deine Website';
 
 // GMX SMTP
@@ -29,7 +29,7 @@ function clean(string $v): string {
 
 // ------------ VALIDIERUNG ------------
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') respond(405, 'Methode nicht erlaubt.');
-if (!empty($_POST['website'] ?? '')) respond(200, 'Danke!'); // Honeypot
+if (!empty($_POST['website'] ?? '')) respond(200, 'Danke!'); 
 
 $name    = clean($_POST['name'] ?? '');
 $email   = clean($_POST['email'] ?? '');
